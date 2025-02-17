@@ -4,22 +4,21 @@ import Image from "next/image";
 
 const stores = [
   {
-    image: "/images/image2.png",
-    quote: "Bird showed us to get started, what to do, and how to do it.",
-    name: "Jason Scer",
+    image: "/images/30.webp",
+    quote: " Get found when people search for your services.",
+    name: "More visibility means more leads and sales. No need to rely only on paid ads; SEO brings long-term results.",
   },
   {
-    image: "/images/shop-2.jpeg",
+    image: "/images/5.jpg",
     quote:
-      "We had no idea how to get started, but Bird showed us the way. And we were able to create something amazing.",
-    name: "John Prency",
+      " Reach your audience directly in their inbox.",
+    name: "Promote offers, send updates, and drive repeat business. Keep your business top-of-mind for customers.",
   },
 
   {
-    image: "/images/s-2.webp",
+    image: "/images/12.png",
     quote:
-      "The team at Bird is amazing. They helped us create a stunning store that we are proud of.",
-    name: "Miguel Martinez",
+      "Your Google Business Profile is a powerful tool for attracting new customers. But are you making the most of your 5-star reputation? With a custom Google Review Plaque, you can proudly display your ratings and reviews, build instant trust, and encourage more customers to leave feedback!",
   },
 ];
 
@@ -33,11 +32,11 @@ const ShopifyStores = () => {
     >
       <div className=" p-4   mx-auto relative z-10  w-full ">
         <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 bg-opacity-50">
-          Shopify Stores <br />
+               Why Choose Us?<br />
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We create stunning Shopify stores that are designed to convert.
+        from hospitality to real estate—reach more customers using proven digital marketing strategies like SEO, social media,Cold calling, email-marketing and targeted ads."
         </p>
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (

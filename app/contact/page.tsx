@@ -38,6 +38,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/navbar";
 
+
 const FormSchema = z.object({
   first_name: z.string(),
   last_name: z.string(),
@@ -45,13 +46,13 @@ const FormSchema = z.object({
   job_title: z.string(),
   company_name: z.string(),
   help: z.enum([
-    "Evaluate Bird for my company",
+    "Evaluate Dmm for my company",
     "Learn More",
     "Get a Quote",
     "Other",
   ]),
   services: z.enum([
-    "Mobile App Develoment",
+    "SEO & GOOGLE MY BUSINESS",
     "Social Media Marketing",
     "UI/UX Design",
     "Branding",
@@ -66,9 +67,9 @@ type FormValues = {
   email: string;
   job_title: string;
   company_name: string;
-  help: "Evaluate Bird for my company" | "Learn More" | "Get a Quote" | "Other";
+  help: "Evaluate Dmm for my company" | "Learn More" | "Get a Quote" | "Other";
   services:
-    | "Mobile App Develoment"
+    | "SEO & GOOGLE MY BUSINESS"
     | "Social Media Marketing"
     | "UI/UX Design"
     | "Branding"
@@ -91,7 +92,7 @@ export default function ContactForm() {
       job_title: "",
       company_name: "",
       help: "Learn More",
-      services: "Mobile App Develoment",
+      services: "SEO & GOOGLE MY BUSINESS",
       info: "",
     },
   });
@@ -122,7 +123,7 @@ export default function ContactForm() {
 
   return (
     <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
-      <Navbar
+  <Navbar
         scrollToWebsiteDesign={() => {}}
         scrollToGraphicDesign={() => {}}
         scrollToShopifyStores={() => {}}
@@ -132,7 +133,7 @@ export default function ContactForm() {
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Contact our sales team
+            Contact our sales team consultatiom
           </div>
           <div
             className="
@@ -141,27 +142,26 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Bird can help your team work better.
+            Let&apos;s talk about the tools your business needs to get more sales.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                One flexible agency for your entire company to share knowledge,
-                ship projects, and collaborate.
+              Invisible online? We’ll boost your rankings, 
+              optimize your site, and grow your audience. Fill out the form to get started!
               </div>
             </div>
 
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                Enterprise features to securely manage user access and security.
+              Every great business starts online. Need SEO or a website? Let’s build your success—fill out the form!
               </div>
             </div>
 
             <div className="flex gap-4  ">
               <div className=" font-normal pb-4 ">
-                Dedicated support to work with you on your setup and help you
-                build the best plan for your company.
+              Stop guessing, start growing! Get a tailored strategy with SEO, Google My Business & targeted marketing. Contact us today!
               </div>
             </div>
           </div>
@@ -263,13 +263,13 @@ export default function ContactForm() {
                       <SelectContent>
                         <div className="flex gap-4">
                           <SelectItem value="Mobile App Develoment">
-                          Mobile App Develoment
+                          SEO & GOOGLE MY BUSINESS
                           </SelectItem>
                         </div>
-                        <SelectItem value="Social Media Marketing">Social Media Marketing</SelectItem>
-                        <SelectItem value="51-200">51-200</SelectItem>
-                        <SelectItem value="501-1000">501-1000</SelectItem>
-                        <SelectItem value="1000+">1000+</SelectItem>
+                        <SelectItem value="Social Media Marketing">SOCIAL MEDIA MARKETING</SelectItem>
+                        <SelectItem value="51-200">EMAIL MARKETING</SelectItem>
+                        <SelectItem value="501-1000">CONTENT WRITNG</SelectItem>
+                        <SelectItem value="1000+">COPYWRITING</SelectItem>
                       </SelectContent>
                     </Select>
                   </FormItem>
@@ -299,7 +299,7 @@ export default function ContactForm() {
                       <SelectContent>
                         <div className="flex gap-4">
                           <SelectItem value="Evaluate Bird for my company">
-                            Evaluate Bird for my company
+                            Evaluate DIGITAL MARKETING MASTERS for my company
                           </SelectItem>
                         </div>
                         <SelectItem value="Learn More">Learn More</SelectItem>
@@ -340,8 +340,8 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                  I agree to Bird&apos; sending marketing communications related
-                  to bird
+                  I agree to DIGITAL MARKETING MASTERS&apos; sending marketing communications related
+                  to DIGITAL MARKETING MASTERS
                 </div>
               </div>
 

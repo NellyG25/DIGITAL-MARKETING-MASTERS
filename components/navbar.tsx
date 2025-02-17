@@ -34,16 +34,16 @@ const Navbar = ({
 
   return (
     <div>
-      <div className="p-6 md:p-10 flex items-center justify-between z-50">
+      <div className="p-2 md:p-4 flex items-center justify-between z-50">
         <div>
           <Link className="cursor-pointer" href="/">
             <Image
               priority
-              src="/logo/logo.svg"
+              src="/logo/logo2.svg"
               alt="Logo"
-              width={100}
-              height={100}
-              className="w-10 h-10 md:w-14 md:h-14"
+              width={128}
+              height={128}
+              className="w-24 h-24 md:w-28 md:h-28"
             />
           </Link>
         </div>
@@ -55,23 +55,20 @@ const Navbar = ({
              bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
-            Website Design
-          </div>
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Graphic Design
-          </div>
-
           <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
-            Shopify Stores
+            ABOUT
           </div>
-          <div onClick={scrollToBrands} className="hover:text-gray-50">
-            Brands
-          </div>
+{/* <div onClick={scrollToServices} className="hover:text-gray-50">
+    SERVICES
+</div> */}
 
-          <Link href="/pricing" className="hover:text-gray-50">
-            Pricing
-          </Link>
+
+          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+            PACKAGES
+          </div>
+          {/*<div onClick={scrollToBrands} className="hover:text-gray-50">
+            EXPERTISE
+          </div>*/}
         </div>
 
         <div className="flex md:hidden">
@@ -94,22 +91,34 @@ const Navbar = ({
             />
           )}
         </div>
+        <div className="hidden md:flex space-x-8">
+  <Link
+    href="/"
+    className="
+      translate-x-6 inline-flex h-12 animate-shimmer items-center justify-center 
+      rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
+      bg-[length:200%_100%] px-8 py-3 font-medium text-slate-400 transition-colors
+      focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
+      focus:ring-offset-slate-50
+    "
+  >
+    Sign In
+  </Link>
 
-        <div className="hidden md:flex">
-          <Link
-            href="/contact"
-            className="
-            inline-flex h-12 animate-shimmer items-center justify-center 
-            rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
-            bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors
-             focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
-              focus:ring-offset-slate-50
+  <Link
+    href="/contact"
+    className="
+      inline-flex h-12 animate-shimmer items-center justify-center 
+      rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
+      bg-[length:200%_100%] px-8 py-3 font-medium text-slate-400 transition-colors
+      focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
+      focus:ring-offset-slate-50
+    "
+  >
+    Contact
+  </Link>
+</div>
 
-            "
-          >
-            Contact
-          </Link>
-        </div>
       </div>
     </div>
   );

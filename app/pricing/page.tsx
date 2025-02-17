@@ -6,64 +6,82 @@ import Link from "next/link";
 
 import { PiCheckCircleFill } from "react-icons/pi";
 
-import Navbar from "@/components/navbar";
+
 
 const plans = [
   {
     index: 0,
-    name: "Basic",
-    price: " US $499",
+    name: "Basic Digital Marketing Package",
     features: [
-      "Fully responsive on all screens",
+      "Social Media Management (2-3 posts per week on platforms like Facebook & Instagram)",
 
-      "Design + Development",
+      "Basic SEO optimization (Google My Business setup and optimization, local search, basic keyword optimization)",
 
-      "Private communication channel",
-      "1-3 days turnaround time",
+      "Google Analytics and performance monitoring",
+      "Monthly performance report, Basic website updates (if necessary)",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "Standalone components tailored to your needs and easily integrated. Perfect for website elements or sections.",
+      "This package typically includes essential services like social media management, basic SEO, and basic website maintenance. It’s ideal for small to medium-sized restaurants looking to establish an online presence.",
     button: "Buy Now",
   },
   {
     index: 1,
-    name: "Premium",
-    price: "US $1299",
+    name: "Standard Digital Marketing Package",
+   
     features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "24-hour support response time",
-      "Private communication channel",
-      "3-5 days turnaround time",
+      "Social Media Management (4-5 posts per week, including graphics/videos)",
+      "Paid Social Media Campaigns (Facebook and Instagram Ads)",
+      "Google Ads (if applicable) + Development",
+      "Full Website SEO optimization (on-page, local SEO, content updates)",
+      "Reputation management (monitoring and responding to reviews)",
+      "Monthly performance report & strategy review",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "Best for early-stage startups, businesses, and freelancers that need a marketing side to showcase their work and vision.",
+      "This package is for restaurants that are more established and want to drive more sales, increase brand awareness, and optimize their online operations (including ads and advanced SEO).",
     button: "Buy Now",
   },
   {
     index: 2,
-    name: "Enterprise",
+    name: "Advanced Digital Marketing Package",
+    features: [
+      " Social Media Management (5-7 posts per week, including Stories, Reels, and Videos)",
+      "Extensive Paid Media Campaigns (Facebook Ads, Instagram Ads, Google Ads, Retargeting campaigns)",
+      "Advanced SEO (keyword research, on-page, off-page, backlink building, Google My Business optimization)",
+      "Video Production (monthly videos for promotions, events, food showcases)",
+      "Influencer Marketing (collaborations with food influencers and bloggers)",
+      "Email Marketing (segmented, personalized campaigns, and promotions)",
+      "Monthly Performance Reporting (Google Analytics, social media insights, ROI from ads)",
+      "Dedicated Account Manager for strategy consultation",
+    ],
+    style:
+      " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50 ",
+    description:
+      "This package is for high-end restaurants or larger hospitality businesses that need a comprehensive digital strategy, including advanced campaigns, influencer partnerships, video content, and more.",
+    button: "Buy Now",
+  },
+  {
+    index: 3,
+    name: " Premium Package (Full-service)",
     feature: "Contact Us",
     price: "Let's Talk!",
     features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "Unlimited Revisions",
-      "24-hour support response time",
-      "Private communication channel",
-      "Priority Development Queue",
-      "Dedicated Project Manager",
+      "Social Media Management (Daily posts, cross-platform campaigns, video content, Stories, engagement with influencers)",
+      "High-budget Paid Media Campaigns (Facebook, Instagram, Google Ads, YouTube Ads, Display Network)",
+      "Comprehensive SEO (extensive on-page & off-page, backlinking strategy, local SEO, blog/content creation)",
+      "Full Website Development & Maintenance (website redesigns, booking systems, online ordering systems, regular updates)",
+      "Advanced Video Production (high-quality video for promotion, ads, website content)",
+      "Influencer Marketing & Partnerships (long-term partnerships with top influencers)",
+      "Email Marketing (advanced campaigns, segmented lists, automation)",
+      "Reputation Management (actively monitoring reviews, responding to customer feedback)",
     ],
     style:
       " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
     description:
-      "Best for small businesses and startups that need a performant website that looks great and converts visitors to customers.",
+      "This is the highest level of service, often required by larger restaurant chains, franchises, or luxury hotels that need an extensive, highly tailored marketing strategy.",
     button: "Contact Us",
   },
 ];
@@ -74,13 +92,6 @@ const Pricing = () => {
      bg-black/[0.96] antialiased 
      bg-grid-white/[0.02] relative overflow-hidden">
 
-<Navbar
-             scrollToWebsiteDesign={() => {}}
-             scrollToGraphicDesign={() => {}}
-             scrollToShopifyStores={() => {}}
-             scrollToBrands={() => {}}
-              scrollToServices={() => {}}
-      />
 
 <div className="flex items-center justify-center flex-col   ">
           <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
@@ -127,19 +138,19 @@ const Pricing = () => {
                 <div className={plan.button}>
                   {index === 0 && (
                     <Link
-                      href="https://buy.stripe.com/6oEg1WdsibFr1EYbIK"
+                      href=""
                       className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
                     >
-                      Buy Now
+                      Contact us
                     </Link>
                   )}
                     {index === 1 && (
                       <Link
                         
-                        href="https://buy.stripe.com/14k2b65ZQ8tf5Ve28c"  
+                        href="/"  
                         className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300" 
                       >
-                        Buy Now
+                        Contact Us
                         </Link>
                     )}
                     {index === 2 && (

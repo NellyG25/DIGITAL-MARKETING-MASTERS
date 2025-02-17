@@ -12,7 +12,7 @@ export function ThreeDCardExample() {
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >
-          Make things float in air
+          Google My Business Plaque
         </CardItem>
         <CardItem
           as="p"
