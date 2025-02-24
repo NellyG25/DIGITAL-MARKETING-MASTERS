@@ -54,7 +54,9 @@ const Navbar = ({
              bg-clip-text text-transparent 
              bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
-        >
+        > <div onClick={/} className="hover:text-gray-50">
+              Home
+        </div>
           <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
             ABOUT
           </div>
