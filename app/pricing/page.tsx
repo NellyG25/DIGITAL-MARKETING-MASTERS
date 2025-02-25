@@ -41,7 +41,7 @@ const plans = [
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "This package is for restaurants that are more established and want to drive more sales, increase brand awareness, and optimize their online operations (including ads and advanced SEO).",
+      "This package is for companies that are more established and want to drive more sales, increase brand awareness, and optimize their online operations (including ads and advanced SEO).",
     button: "Buy Now",
   },
   {
@@ -60,7 +60,7 @@ const plans = [
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50 ",
     description:
-      "This package is for high-end restaurants or larger hospitality businesses that need a comprehensive digital strategy, including advanced campaigns, influencer partnerships, video content, and more.",
+      "This package is for high-end companies or larger hospitality businesses that need a comprehensive digital strategy, including advanced campaigns, influencer partnerships, video content, and more.",
     button: "Buy Now",
   },
   {
@@ -81,7 +81,7 @@ const plans = [
     style:
       " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
     description:
-      "This is the highest level of service, often required by larger restaurant chains, franchises, or luxury hotels that need an extensive, highly tailored marketing strategy.",
+      "This is the highest level of service, often required by larger companies chains, franchises, or luxury hotels that need an extensive, highly tailored marketing strategy.",
     button: "Contact Us",
   },
 ];
