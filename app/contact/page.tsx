@@ -37,6 +37,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/navbar";
+import FAQS from "../faq";
 
 
 const FormSchema = z.object({
@@ -392,6 +393,7 @@ export default function ContactForm() {
           )}
         </Form>
       </div>
+      <FAQS/>
     </div>
   );
 }
