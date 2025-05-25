@@ -34,16 +34,16 @@ const Navbar = ({
 
   return (
     <div>
-      <div className="p-2 md:p-4 flex items-center justify-between z-50">
+      <div className="p-2 md:p-4 flex items-center justify-between z-50 sticky top-0">
         <div>
           <Link className="cursor-pointer" href="/">
             <Image
               priority
-              src="/logo/logo2.svg"
+              src="/logo/dmmlogo.svg"
               alt="Logo"
               width={128}
               height={128}
-              className="w-24 h-24 md:w-28 md:h-28"
+              className="w-24 h-24 md:w-28 md:h-28 rounded-full"
             />
           </Link>
         </div>

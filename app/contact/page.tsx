@@ -37,6 +37,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/navbar";
+import FAQS from "../faq";
 
 
 const FormSchema = z.object({
@@ -133,7 +134,8 @@ export default function ContactForm() {
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Contact our sales team consultatiom
+            Contact our sales team consultation
+            
           </div>
           <div
             className="
@@ -391,6 +393,7 @@ export default function ContactForm() {
           )}
         </Form>
       </div>
+      <FAQS/>
     </div>
   );
 }
