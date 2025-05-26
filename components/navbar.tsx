@@ -43,7 +43,7 @@ const Navbar = ({
               alt="Logo"
               width={128}
               height={128}
-              className="w-24 h-24 md:w-28 md:h-28 rounded-full"
+              className="w-20 h-20 md:w-18 md:h-18 rounded-full"
             />
           </Link>
         </div>
@@ -69,6 +69,11 @@ const Navbar = ({
           {/*<div onClick={scrollToBrands} className="hover:text-gray-50">
             EXPERTISE
           </div>*/}
+           <Link
+            href="/"
+            className="hover:text-gray-50">
+            STORE
+          </Link>
         </div>
 
         <div className="flex md:hidden">
