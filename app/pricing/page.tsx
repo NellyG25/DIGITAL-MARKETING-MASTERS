@@ -138,7 +138,7 @@ const Pricing = () => {
                 <div className={plan.button}>
                   {index === 0 && (
                     <Link
-                      href=""
+                      href="/contact"
                       className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
                     >
                       Contact us
@@ -147,13 +147,22 @@ const Pricing = () => {
                     {index === 1 && (
                       <Link
                         
-                        href="/"  
+                        href="/contact"  
                         className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300" 
                       >
                         Contact Us
                         </Link>
                     )}
                     {index === 2 && (
+
+                          <Link
+                          href="/contact"
+                          className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-purple-500 to-blue-300"
+                        >
+                          Contact Us
+                        </Link>
+                    )}  
+                     {index === 3 && (
 
                           <Link
                           href="/contact"
