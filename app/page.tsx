@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState, useRef, useEffect } from "react";
 import Navbar from "@/components/navbar";
@@ -12,10 +12,8 @@ import WebsiteDesign from "./website-design";
 import GraphicDesign from "./graphic-design";
 import ShopifyStores from "./shopify-stores";
 import Brands from "./brands";
-
 import Pricing from "./pricing/page";
 import FAQS from "./faq";
-
 import Carousel from "./carousel";
 
 export default function Home() {
@@ -65,15 +63,14 @@ export default function Home() {
     }, 10000);
 
     return () => clearInterval(interval);
-  }, [sliders.length, messages.length]); // ✅ Added dependencies to fix the warning
+  }, [sliders.length, messages.length]);
 
-  // Scroll functions
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
-    <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative">
+    <div className="w-full overflow-x-hidden bg-black/[0.96] antialiased bg-grid-white/[0.02] relative">
       <Navbar
         scrollToWebsiteDesign={() => scrollToSection(websiteDesignRef)}
         scrollToGraphicDesign={() => scrollToSection(graphicDesignRef)}
@@ -84,7 +81,7 @@ export default function Home() {
 
       <Spotlight className="hidden md:flex md:-top-80 left-80" fill="white" />
 
-      <div className="p-2 mx-auto relative z-10 w-full pt-2 md:pt-5 px-2">
+      <div className="p-2 mx-auto relative z-10 w-full pt-2 md:pt-5 px-2 overflow-x-hidden">
         <h1 className="text-4xl pb-5 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
           Your Business Deserves More Visibility. <br /> Let&apos;s Make It Happen!
         </h1>
@@ -106,34 +103,40 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="w-full pt-20">
+        <div className="w-full pt-20 overflow-x-hidden">
           <SliderOne />
         </div>
 
-        <Carousel />
+        <div className="overflow-x-hidden">
+          <Carousel />
+        </div>
 
-        <div ref={shopifyStoresRef}>
+        <div ref={shopifyStoresRef} className="overflow-x-hidden">
           <ShopifyStores />
         </div>
 
-        <div ref={websiteDesignRef}>
+        <div ref={websiteDesignRef} className="overflow-x-hidden">
           <Pricing />
         </div>
 
-        <div ref={graphicDesignRef}>
+        <div ref={graphicDesignRef} className="overflow-x-hidden">
           <WebsiteDesign />
         </div>
 
         {/* Uncomment when needed */}
-        {/* <div ref={graphicDesignRef}>
+        {/* 
+        <div ref={graphicDesignRef} className="overflow-x-hidden">
           <GraphicDesign />
-        </div> 
+        </div>
 
-        <div ref={brandsRef}>
+        <div ref={brandsRef} className="overflow-x-hidden">
           <Brands />
-        </div> */}
+        </div> 
+        */}
 
-        <FAQS />
+        <div className="overflow-x-hidden">
+          <FAQS />
+        </div>
       </div>
     </div>
   );
